@@ -13,7 +13,7 @@ import java.time.format.DateTimeFormatter;
  *
  * @author Clint
  */
-public class Estacionamiento {
+public class Principal {
 
     /**
      * @param args the command line arguments
@@ -21,13 +21,26 @@ public class Estacionamiento {
     public static void main(String[] args) {
         // TODO code application logic here
                     LocalDateTime fecha_actual = LocalDateTime.now();
-                    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyy-MM-HH:mm");
-                    
+                    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss");
                     String fecha1 = fecha_actual.format(formatter);
                     
                     System.out.println(fecha1);
+                    
+                    
+                    
+                    
+                    
+                    
                     Ventana v=new Ventana();
                     v.setVisible(true);
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
                     
                     
         

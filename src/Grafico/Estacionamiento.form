@@ -26,64 +26,91 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                          <Component id="U1" max="32767" attributes="0"/>
-                          <Component id="U10" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="U2" max="32767" attributes="0"/>
-                          <Component id="U11" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="U12" max="32767" attributes="0"/>
-                          <Component id="U3" min="-2" pref="45" max="-2" attributes="0"/>
+                          <Component id="U21" alignment="0" max="32767" attributes="0"/>
+                          <Component id="U11" alignment="0" max="32767" attributes="0"/>
+                          <Component id="U1" alignment="0" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="U13" pref="49" max="32767" attributes="0"/>
-                          <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                              <Component id="U4" min="-2" pref="45" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="U2" max="32767" attributes="0"/>
+                              <Component id="U12" max="32767" attributes="0"/>
                           </Group>
+                          <Component id="U22" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="1" attributes="0">
-                              <Component id="U14" min="-2" pref="53" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="U3" max="32767" attributes="0"/>
+                                  <Component id="U13" max="32767" attributes="0"/>
+                              </Group>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="U15" min="-2" pref="53" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="U16" min="-2" pref="54" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Component id="U4" min="-2" pref="45" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="U5" min="-2" pref="45" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="U6" min="-2" pref="47" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="U7" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="U8" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="U9" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="U10" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <Component id="U14" min="-2" pref="48" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="U15" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                                      <Component id="U16" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="U17" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="U18" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="U19" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="U20" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
                           </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <Component id="U5" min="-2" pref="45" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="U6" min="-2" pref="47" max="-2" attributes="0"/>
+                              <Component id="U23" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="U24" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="U25" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="U7" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="U26" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="U27" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="U28" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="U29" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="U30" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="U8" min="-2" max="-2" attributes="0"/>
-                          <Component id="U17" min="-2" pref="53" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="U9" min="-2" max="-2" attributes="0"/>
-                          <Component id="U18" min="-2" pref="53" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" attributes="0">
-                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
                   </Group>
               </Group>
+              <EmptySpace pref="166" max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="cargar" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -103,10 +130,12 @@
                   <Component id="U7" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="U8" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="U9" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="U10" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
+              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+              <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="U10" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="U11" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="U12" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="U13" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -115,8 +144,27 @@
                   <Component id="U16" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="U17" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="U18" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="U19" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="U20" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="69" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="U21" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="U22" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="U23" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="U24" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="U25" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="U26" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="U27" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="U28" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="U29" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="U30" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="52" max="32767" attributes="0"/>
+              <Component id="cargar" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -131,6 +179,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="1"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="U1ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="U2">
       <Properties>
@@ -180,6 +231,11 @@
         <Property name="text" type="java.lang.String" value="10"/>
       </Properties>
     </Component>
+    <Component class="javax.swing.JLabel" name="jLabel4">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="PISO 2"/>
+      </Properties>
+    </Component>
     <Component class="javax.swing.JButton" name="U11">
       <Properties>
         <Property name="text" type="java.lang.String" value="11"/>
@@ -219,6 +275,91 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="18"/>
       </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="U19">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="19"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="U20">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="20"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="PISO 3"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="U21">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="21"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="U22">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="22"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="U23">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="23"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="U24">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="24"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="U25">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="25"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="U26">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="26"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="U27">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="27"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="U27ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="U28">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="28"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="U28ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="U29">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="29"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="U29ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="U30">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="30"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="U30ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="cargar">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Refrescar"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cargarActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

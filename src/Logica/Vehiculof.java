@@ -9,14 +9,16 @@ package Logica;
  *
  * @author Clint
  */
-public class Vehiculo {
+public class Vehiculof {
     
-    private String placa;
-    private String horae;
+        private String placa;
+        private String horae;
+        private String horas;
 
-    public Vehiculo(String placa, String horae) {
+    public Vehiculof(String placa, String horae, String horas) {
         this.placa = placa;
         this.horae = horae;
+        this.horas = horas;
     }
 
     public String getPlaca() {
@@ -34,9 +36,17 @@ public class Vehiculo {
     public void setHorae(String horae) {
         this.horae = horae;
     }
+
+    public String getHoras() {
+        return horas;
+    }
+
+    public void setHoras(String horas) {
+        this.horas = horas;
+    }
+        
+        
     
-    
-    
-    
-    
+        
+        
 }

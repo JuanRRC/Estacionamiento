@@ -5,6 +5,13 @@
  */
 package Grafico;
 
+import Logica.LugarE;
+import java.awt.Color;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+
 /**
  *
  * @author Clint
@@ -14,10 +21,115 @@ public class Estacionamiento extends javax.swing.JFrame {
     /**
      * Creates new form Estacionamiento
      */
+    Map<Integer, String> lugar = new HashMap<Integer, String>();
+    int u;
     public Estacionamiento() {
         initComponents();
+        
     }
 
+    public void mostrar(Map<Integer, String> lugar2){
+        lugar =lugar2;
+    }
+    
+    public void ocupar(){
+        Iterator it = lugar.keySet().iterator();
+        while(it.hasNext()){
+            Integer key = (Integer) it.next();
+                if(key==1){
+                    U1.setBackground(Color.RED);
+                }
+                if(key==2){
+                    U2.setBackground(Color.RED);
+                }
+                if(key==3){
+                    U3.setBackground(Color.RED);
+                }
+                if(key==4){
+                    U4.setBackground(Color.RED);
+                }
+                if(key==5){
+                    U5.setBackground(Color.RED);
+                }
+                if(key==6){
+                    U6.setBackground(Color.RED);
+                }
+                if(key==7){
+                    U7.setBackground(Color.RED);
+                }
+                if(key==8){
+                    U8.setBackground(Color.RED);
+                }
+                if(key==9){
+                    U9.setBackground(Color.RED);
+                }
+                if(key==10){
+                    U10.setBackground(Color.RED);
+                }
+                if(key==11){
+                    U11.setBackground(Color.RED);
+                }
+                if(key==12){
+                    U12.setBackground(Color.RED);
+                }
+                if(key==13){
+                    U13.setBackground(Color.RED);
+                }
+                if(key==14){
+                    U14.setBackground(Color.RED);
+                }
+                if(key==15){
+                    U15.setBackground(Color.RED);
+                }
+                if(key==16){
+                    U16.setBackground(Color.RED);
+                }
+                if(key==17){
+                    U17.setBackground(Color.RED);
+                }
+                if(key==18){
+                    U18.setBackground(Color.RED);
+                }
+                if(key==19){
+                    U19.setBackground(Color.RED);
+                }
+                if(key==20){
+                    U20.setBackground(Color.RED);
+                }
+                if(key==21){
+                    U21.setBackground(Color.RED);
+                }
+                if(key==22){
+                    U22.setBackground(Color.RED);
+                }
+                if(key==23){
+                    U23.setBackground(Color.RED);
+                }
+                if(key==24){
+                    U24.setBackground(Color.RED);
+                }
+                if(key==25){
+                    U25.setBackground(Color.RED);
+                }
+                if(key==26){
+                    U26.setBackground(Color.RED);
+                }
+                if(key==27){
+                    U27.setBackground(Color.RED);
+                }
+                if(key==28){
+                    U28.setBackground(Color.RED);
+                }
+                if(key==29){
+                    U29.setBackground(Color.RED);
+                }
+                if(key==30){
+                    U30.setBackground(Color.RED);
+                }
+             
+           
+        }       
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -38,6 +150,7 @@ public class Estacionamiento extends javax.swing.JFrame {
         U8 = new javax.swing.JButton();
         U9 = new javax.swing.JButton();
         U10 = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
         U11 = new javax.swing.JButton();
         U12 = new javax.swing.JButton();
         U13 = new javax.swing.JButton();
@@ -46,12 +159,31 @@ public class Estacionamiento extends javax.swing.JFrame {
         U16 = new javax.swing.JButton();
         U17 = new javax.swing.JButton();
         U18 = new javax.swing.JButton();
+        U19 = new javax.swing.JButton();
+        U20 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        U21 = new javax.swing.JButton();
+        U22 = new javax.swing.JButton();
+        U23 = new javax.swing.JButton();
+        U24 = new javax.swing.JButton();
+        U25 = new javax.swing.JButton();
+        U26 = new javax.swing.JButton();
+        U27 = new javax.swing.JButton();
+        U28 = new javax.swing.JButton();
+        U29 = new javax.swing.JButton();
+        U30 = new javax.swing.JButton();
+        cargar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jLabel1.setText("PISO 1");
 
         U1.setText("1");
+        U1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                U1ActionPerformed(evt);
+            }
+        });
 
         U2.setText("2");
 
@@ -76,6 +208,8 @@ public class Estacionamiento extends javax.swing.JFrame {
 
         U10.setText("10");
 
+        jLabel4.setText("PISO 2");
+
         U11.setText("11");
 
         U12.setText("12");
@@ -92,6 +226,59 @@ public class Estacionamiento extends javax.swing.JFrame {
 
         U18.setText("18");
 
+        U19.setText("19");
+
+        U20.setText("20");
+
+        jLabel2.setText("PISO 3");
+
+        U21.setText("21");
+
+        U22.setText("22");
+
+        U23.setText("23");
+
+        U24.setText("24");
+
+        U25.setText("25");
+
+        U26.setText("26");
+
+        U27.setText("27");
+        U27.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                U27ActionPerformed(evt);
+            }
+        });
+
+        U28.setText("28");
+        U28.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                U28ActionPerformed(evt);
+            }
+        });
+
+        U29.setText("29");
+        U29.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                U29ActionPerformed(evt);
+            }
+        });
+
+        U30.setText("30");
+        U30.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                U30ActionPerformed(evt);
+            }
+        });
+
+        cargar.setText("Refrescar");
+        cargar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cargarActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -99,51 +286,78 @@ public class Estacionamiento extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(24, 24, 24)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel4)
+                    .addComponent(jLabel1)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(U1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(U10))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(U2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(U11))
-                        .addGap(14, 14, 14)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(U12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(U3, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(U21, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(U11, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(U1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(U13, javax.swing.GroupLayout.DEFAULT_SIZE, 49, Short.MAX_VALUE)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
-                                .addComponent(U4, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(18, 18, 18)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(U2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(U12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(U22))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(U14, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(14, 14, 14)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(U3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(U13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(U15, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(U4, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(U5, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(U6, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(U7)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(U8)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(U9)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(U10))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(U14, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(U15)
+                                        .addGap(10, 10, 10)
+                                        .addComponent(U16)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(U17)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(U18)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(U19)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(U20))))
+                            .addGroup(layout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(U16, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(9, 9, 9))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(U5, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(U23)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(U6, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(U24)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(U25)
                                 .addGap(18, 18, 18)
-                                .addComponent(U7)
-                                .addGap(26, 26, 26)))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(U8)
-                            .addComponent(U17, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(U9)
-                            .addComponent(U18, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(36, 36, 36))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addGap(44, 44, 44))))
+                                .addComponent(U26)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(U27)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(U28)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(U29)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(U30)))))
+                .addContainerGap(166, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(cargar)
+                .addGap(33, 33, 33))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -160,10 +374,12 @@ public class Estacionamiento extends javax.swing.JFrame {
                     .addComponent(U6)
                     .addComponent(U7)
                     .addComponent(U8)
-                    .addComponent(U9))
+                    .addComponent(U9)
+                    .addComponent(U10))
+                .addGap(31, 31, 31)
+                .addComponent(jLabel4)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(U10)
                     .addComponent(U11)
                     .addComponent(U12)
                     .addComponent(U13)
@@ -171,8 +387,26 @@ public class Estacionamiento extends javax.swing.JFrame {
                     .addComponent(U15)
                     .addComponent(U16)
                     .addComponent(U17)
-                    .addComponent(U18))
-                .addContainerGap(69, Short.MAX_VALUE))
+                    .addComponent(U18)
+                    .addComponent(U19)
+                    .addComponent(U20))
+                .addGap(27, 27, 27)
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(U21)
+                    .addComponent(U22)
+                    .addComponent(U23)
+                    .addComponent(U24)
+                    .addComponent(U25)
+                    .addComponent(U26)
+                    .addComponent(U27)
+                    .addComponent(U28)
+                    .addComponent(U29)
+                    .addComponent(U30))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 52, Short.MAX_VALUE)
+                .addComponent(cargar)
+                .addGap(38, 38, 38))
         );
 
         pack();
@@ -181,6 +415,32 @@ public class Estacionamiento extends javax.swing.JFrame {
     private void U8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_U8ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_U8ActionPerformed
+
+    private void U27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_U27ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_U27ActionPerformed
+
+    private void U28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_U28ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_U28ActionPerformed
+
+    private void U29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_U29ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_U29ActionPerformed
+
+    private void U30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_U30ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_U30ActionPerformed
+
+    private void cargarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cargarActionPerformed
+        // TODO add your handling code here:
+        
+        
+    }//GEN-LAST:event_cargarActionPerformed
+
+    private void U1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_U1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_U1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -228,14 +488,29 @@ public class Estacionamiento extends javax.swing.JFrame {
     private javax.swing.JButton U16;
     private javax.swing.JButton U17;
     private javax.swing.JButton U18;
+    private javax.swing.JButton U19;
     private javax.swing.JButton U2;
+    private javax.swing.JButton U20;
+    private javax.swing.JButton U21;
+    private javax.swing.JButton U22;
+    private javax.swing.JButton U23;
+    private javax.swing.JButton U24;
+    private javax.swing.JButton U25;
+    private javax.swing.JButton U26;
+    private javax.swing.JButton U27;
+    private javax.swing.JButton U28;
+    private javax.swing.JButton U29;
     private javax.swing.JButton U3;
+    private javax.swing.JButton U30;
     private javax.swing.JButton U4;
     private javax.swing.JButton U5;
     private javax.swing.JButton U6;
     private javax.swing.JButton U7;
     private javax.swing.JButton U8;
     private javax.swing.JButton U9;
+    private javax.swing.JButton cargar;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel4;
     // End of variables declaration//GEN-END:variables
 }

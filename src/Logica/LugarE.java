@@ -12,10 +12,19 @@ package Logica;
 public class LugarE {
     
     private int ubicacion;
-    private int indicador;
-    private float tiempo;
-    private double costo;
-    Vehiculo auto;
+
+    public LugarE(int ubicacion) {
+        this.ubicacion = ubicacion;
+    }
+
+    public int getUbicacion() {
+        return ubicacion;
+    }
+
+    public void setUbicacion(int ubicacion) {
+        this.ubicacion = ubicacion;
+    }
+    
     
     
     
