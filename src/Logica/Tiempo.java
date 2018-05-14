@@ -43,6 +43,7 @@ public class Tiempo {
     }
     
     public void diferencia(String he,String hs) throws ParseException{
+        /*
         String h=he;
         String h2=hs;
         
@@ -62,7 +63,26 @@ public class Tiempo {
         String segundos2 = parts2[3];
         System.out.println(dia2);
         int hosa = Integer.parseInt(minutos2);
+        */
         
+    }
+    
+    
+    public long calfe(String he,String hs) throws ParseException{
+        
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd H:m:s");
+ 
+        Date fechaInicial=dateFormat.parse(he);
+        Date fechaFinal=dateFormat.parse(hs);
+        
+        long diff = fechaFinal.getTime() - fechaInicial.getTime();
+        long segundos = diff / 1000;
+        long minutos = segundos / 60;
+        System.out.println(minutos);
+        System.out.println(hs);
+        System.out.println(he);
+        
+        return minutos;
         
     }
        
