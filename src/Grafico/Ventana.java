@@ -147,7 +147,7 @@ public class Ventana extends javax.swing.JFrame {
         String p = placa.getText();
         int lugar = (int) (Math.random() * 10) + 1;
         LocalDateTime fecha_actual = LocalDateTime.now();
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd:HH:mm:ss");
         String fecha1 = fecha_actual.format(formatter);
         
         if(!lugares.containsValue(p)){
