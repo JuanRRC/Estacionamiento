@@ -10,6 +10,11 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import Logica.*;
+import java.text.ParseException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -20,6 +25,7 @@ public class Salida extends javax.swing.JFrame {
     
     Map<Integer, String> lugar2 = new HashMap<Integer, String>();
     ArrayList<Vehiculo> lista1 = new ArrayList<Vehiculo>();
+     ArrayList<Vehiculof> lista3 = new ArrayList<Vehiculof>();
     /**
      * Creates new form Salida
      */
@@ -31,6 +37,10 @@ public class Salida extends javax.swing.JFrame {
         lugar2 = ob;
         lista1=l;
         combox();
+        LocalDateTime fecha_actual = LocalDateTime.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        String fecha1 = fecha_actual.format(formatter);
+        fecha.setText(fecha1);
     }
     
     public void combox(){
@@ -53,13 +63,15 @@ public class Salida extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         ubicacion = new javax.swing.JComboBox<>();
         jLabel2 = new javax.swing.JLabel();
-        imprimir = new javax.swing.JButton();
+        calcular = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         hora = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         minutos = new javax.swing.JTextField();
         segundos = new javax.swing.JTextField();
+        imprimir = new javax.swing.JButton();
+        fecha = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -72,12 +84,12 @@ public class Salida extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setText("Hora de salida : ");
+        jLabel2.setText("Fecha Actual :");
 
-        imprimir.setText("Imprimir Factura");
-        imprimir.addActionListener(new java.awt.event.ActionListener() {
+        calcular.setText("Calcular");
+        calcular.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                imprimirActionPerformed(evt);
+                calcularActionPerformed(evt);
             }
         });
 
@@ -86,6 +98,13 @@ public class Salida extends javax.swing.JFrame {
         jLabel4.setText("Minutos :");
 
         jLabel5.setText("Segundos :");
+
+        imprimir.setText("Imprimir Recibo");
+        imprimir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                imprimirActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -96,25 +115,31 @@ public class Salida extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(52, 52, 52)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel2)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(fecha))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel1)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(ubicacion, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel3)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(hora, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel4)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(minutos, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(calcular)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jLabel3)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(hora, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jLabel4)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(minutos, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(jLabel5)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(segundos, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(97, 97, 97)
+                        .addGap(123, 123, 123)
                         .addComponent(imprimir)))
                 .addContainerGap(51, Short.MAX_VALUE))
         );
@@ -126,7 +151,9 @@ public class Salida extends javax.swing.JFrame {
                     .addComponent(jLabel1)
                     .addComponent(ubicacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(41, 41, 41)
-                .addComponent(jLabel2)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(fecha))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(hora, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -135,15 +162,17 @@ public class Salida extends javax.swing.JFrame {
                     .addComponent(minutos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(segundos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 77, Short.MAX_VALUE)
+                .addGap(43, 43, 43)
+                .addComponent(calcular)
+                .addGap(18, 18, 18)
                 .addComponent(imprimir)
-                .addGap(56, 56, 56))
+                .addContainerGap(49, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void imprimirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_imprimirActionPerformed
+    private void calcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calcularActionPerformed
         // TODO add your handling code here:
         String h=hora.getText();
         String m=minutos.getText();
@@ -153,28 +182,59 @@ public class Salida extends javax.swing.JFrame {
         int se=Integer.parseInt(s);
         
         String u = (String) ubicacion.getSelectedItem();
-        System.out.println("Placa :"+u);
-        String horas=h+":"+m+":"+s;
-        System.out.println("Hora de salida :"+ho+":"+mi+":"+se);
+        String horae = null;
         
-        
-        /*
         Iterator<Vehiculo> it = lista1.iterator();
         Vehiculo num;
         while (it.hasNext()){
             num = it.next();
-            System.out.println("Placa :"+num.getPlaca());
-            System.out.println("Hora Llegada :"+num.getHorae());
-             
+            if(num.getPlaca()==u){
+                horae=num.getHorae();
+            }
         }
-        */
-    }//GEN-LAST:event_imprimirActionPerformed
+        
+        
+        
+        System.out.println("Placa :"+u);
+        String horas=h+":"+m+":"+s;
+        System.out.println("Hora de salida :"+horas);
+        System.out.println("Hora de entrada :"+horae);
+        Vehiculof vf =new Vehiculof(u,horae,horas);
+        lista3.add(vf);
+        Tiempo t = new Tiempo(horae,horas);
+        try {
+            t.diferencia(horae, horas);
+        } catch (ParseException ex) {
+            Logger.getLogger(Salida.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_calcularActionPerformed
 
     private void ubicacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ubicacionActionPerformed
         // TODO add your handling code here:
         
        
     }//GEN-LAST:event_ubicacionActionPerformed
+
+    private void imprimirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_imprimirActionPerformed
+        // TODO add your handling code here:
+        
+        
+        /*
+        String u = (String) ubicacion.getSelectedItem();
+        
+        Iterator it = lugar2.keySet().iterator();
+        while(it.hasNext()){
+            Integer key = (Integer) it.next();
+            if(lugar2.get(key)==u){
+                lugar2.remove(key);
+                ubicacion.removeItem(u);
+            }    
+        }
+        */
+        
+        
+        
+    }//GEN-LAST:event_imprimirActionPerformed
 
     /**
      * @param args the command line arguments
@@ -212,6 +272,8 @@ public class Salida extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton calcular;
+    private javax.swing.JLabel fecha;
     private javax.swing.JTextField hora;
     private javax.swing.JButton imprimir;
     private javax.swing.JLabel jLabel1;
