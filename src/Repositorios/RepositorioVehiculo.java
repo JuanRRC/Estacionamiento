@@ -24,13 +24,13 @@ public class RepositorioVehiculo {
     public static void insertarAuto ( Vehiculo vehiculo) {
         try {
             
-            String query = "INSERT INTO public.vehiculo(placa, horaentrada)VALUES (?,?);";
+            String query = "INSERT INTO public.vehiculo(placa, horaentrada,fechaentrada)VALUES (?,?,?);";
             PreparedStatement sentenciaP = database.open().prepareStatement(query);
            // sentenciaP.setInt(1, recreacionista.getId());
             
             sentenciaP.setString(1, vehiculo.getPlaca());
             sentenciaP.setString(2, vehiculo.getHorae());
-
+            sentenciaP.setString(3, vehiculo.getFechae());
             
             sentenciaP.executeUpdate();
             sentenciaP.close();
@@ -51,7 +51,7 @@ public class RepositorioVehiculo {
             ResultSet resultado = sentenciaP.executeQuery();
 //String nombre,String horaI, String horaF, String Usuario,String descripcion,String fechaS
             while (resultado.next()) {
-                eventos.add(Vehiculo.crearV(resultado.getString("placa"), resultado.getString("horaentrada")));
+                eventos.add(Vehiculo.crearV(resultado.getString("placa"), resultado.getString("horaentrada"),resultado.getString("fechaentrada")));
             }
             
             sentenciaP.close();

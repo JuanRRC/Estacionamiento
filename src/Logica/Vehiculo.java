@@ -14,14 +14,26 @@ public class Vehiculo {
     
     private String placa;
     private String horae;
+    private String fechae;
 
-    public Vehiculo(String placa, String horae) {
+    public Vehiculo(String placa, String horae,String fechae) {
         
         this.placa = placa;
         this.horae = horae;
+        this.fechae=fechae;
+    }
+
+    public String getFechae() {
+        return fechae;
+    }
+
+    public void setFechae(String fechae) {
+        this.fechae = fechae;
     }
 
   
+    
+    
     public String getPlaca() {
         return placa;
     }
@@ -38,8 +50,8 @@ public class Vehiculo {
         this.horae = horae;
     }
     
-    public static Vehiculo crearV(String placa,String horae) {
-        return new Vehiculo(placa,horae);
+    public static Vehiculo crearV(String placa,String horae,String fechae) {
+        return new Vehiculo(placa,horae,fechae);
         
     }
     

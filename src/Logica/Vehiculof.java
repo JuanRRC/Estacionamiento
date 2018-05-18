@@ -16,17 +16,34 @@ public class Vehiculof {
         private String horae;
         private String horas;
         private double tarifa;
+        private String fechae;
+        private String fechas;
 
-    public Vehiculof(String placa, String horae, String horas,double tarifa) {
+    public Vehiculof(String placa, String horae, String horas,double tarifa,String fechae,String fechas) {
         
         this.placa = placa;
         this.horae = horae;
         this.horas = horas;
         this.tarifa=tarifa;
+        this.fechae=fechae;
+        this.fechas=fechas;
     }
 
-  
-    
+    public String getFechae() {
+        return fechae;
+    }
+
+    public void setFechae(String fechae) {
+        this.fechae = fechae;
+    }
+
+    public String getFechas() {
+        return fechas;
+    }
+
+    public void setFechas(String fechas) {
+        this.fechas = fechas;
+    }
 
     public double getTarifa() {
         return tarifa;
@@ -63,8 +80,8 @@ public class Vehiculof {
     }
         
         
-    public static Vehiculof crearV(String placa, String horae, String horas,double tarifa) {
-        return new Vehiculof(placa,horae,horas,tarifa);
+    public static Vehiculof crearV(String placa, String horae, String horas,double tarifa,String fechae,String fechas) {
+        return new Vehiculof(placa,horae,horas,tarifa,fechae,fechas);
         
     }
         

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f3fa8d6a-b853-4d41-b109-63a827d69db3">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" >
 	<property name="ireport.zoom" value="1.0"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
@@ -13,7 +13,7 @@
 			<style backcolor="#E6DAC3"/>
 		</conditionalStyle>
 	</style>
-	<queryString>
+	<queryString language="SQL">
 		<![CDATA[SELECT
      vehiculofinal."placa" AS vehiculofinal_placa,
      vehiculofinal."horaentrada" AS vehiculofinal_horaentrada,
@@ -35,42 +35,35 @@ FROM
 	</background>
 	<title>
 		<band height="136" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="0" width="164" height="126" />
+				<imageExpression><![CDATA["coffee.jpg"]]></imageExpression>
+			</image>
 			<staticText>
-				<reportElement style="Title" x="170" y="0" width="263" height="62" uuid="ee908ad1-769c-4fb2-99b6-65d58d36259b"/>
+				<reportElement style="Title" x="270" y="0" width="263" height="62" />
 				<textElement verticalAlignment="Middle">
-					<font size="24" pdfFontName="Times-Roman"/>
+					<font pdfFontName="Times-Roman"/>
 				</textElement>
-				<text><![CDATA[REPORTE ESTACIONAMIENTO]]></text>
+				<text><![CDATA[Coffee Title]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="SubTitle" x="219" y="62" width="196" height="22" uuid="52c7b954-900d-402b-b20e-512b4942603d"/>
+				<reportElement style="SubTitle" x="303" y="62" width="196" height="22" />
 				<textElement>
 					<font fontName="Times New Roman" pdfFontName="Times-Roman"/>
 				</textElement>
-				<text><![CDATA[Salida de Vehiculos]]></text>
+				<text><![CDATA[Coffee SubTitle]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="172" y="94" width="383" height="42" uuid="81460586-42cb-491d-af0f-3eb4f479b6d1"/>
-				<textElement>
+				<reportElement x="172" y="94" width="383" height="42" />
+				<textElement textAlignment="Right">
 					<font size="10"/>
 				</textElement>
-				<text><![CDATA[Reporte de los autos que ingresaron al centro comercial hasta la fecha en que se genero el reporte.]]></text>
+				<text><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce auctor purus gravida arcu aliquam mattis. Donec et nulla libero, ut varius massa. Nulla sed turpis elit. Etiam aliquet mauris a ligula hendrerit in auctor leo lobortis.]]></text>
 			</staticText>
 			<image>
-				<reportElement x="433" y="-115" width="267" height="209" uuid="af5e8a9e-daa4-46a8-8b2a-c011a19691f4"/>
+				<reportElement x="633" y="-73" width="219" height="209" />
 				<imageExpression><![CDATA["coffee_stain.png"]]></imageExpression>
 			</image>
-			<image>
-				<reportElement x="17" y="0" width="137" height="120" uuid="8eae2019-95f3-4a85-ac9d-4b3c07f14427"/>
-				<imageExpression><![CDATA["C:\\Users\\Clint\\Documents\\NetBeansProjects\\estacionamiento\\src\\imagenes\\tittanlogo2.jpg"]]></imageExpression>
-			</image>
-			<textField pattern="EEEEE dd MMMMM yyyy">
-				<reportElement style="Column header" x="358" y="116" width="197" height="20" forecolor="#736343" uuid="35c87183-30d7-4aa3-9972-b2036197e93f"/>
-				<textElement verticalAlignment="Middle">
-					<font size="10" isBold="false"/>
-				</textElement>
-				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
-			</textField>
 		</band>
 	</title>
 	<pageHeader>
@@ -79,56 +72,72 @@ FROM
 	<columnHeader>
 		<band height="16" splitType="Stretch">
 			<line>
-				<reportElement positionType="FixRelativeToBottom" x="0" y="15" width="555" height="1" uuid="81bea569-a8b7-49d8-adfc-d3ca1b7f1f0d"/>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="15" width="802" height="1" />
 				<graphicElement>
 					<pen lineWidth="0.5" lineColor="#999999"/>
 				</graphicElement>
 			</line>
 			<staticText>
-				<reportElement style="Column header" x="0" y="0" width="117" height="15" forecolor="#736343" uuid="777891f6-a07f-4509-b28a-005c438fcc16"/>
+				<reportElement style="Column header" x="0" y="0" width="133" height="15" forecolor="#736343" />
 				<text><![CDATA[PLACA]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="Column header" x="117" y="0" width="146" height="15" forecolor="#736343" uuid="e950ee0a-060b-48cd-bcae-16f78cdbdd6c"/>
-				<text><![CDATA[FECHA/HORA INGRESO]]></text>
+				<reportElement style="Column header" x="133" y="0" width="133" height="15" forecolor="#736343" />
+				<text><![CDATA[HORA ENTRADA]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="Column header" x="263" y="0" width="151" height="15" forecolor="#736343" uuid="d8b45015-885a-4854-a894-b9eef153b2b6"/>
-				<text><![CDATA[FECHA/HORA SALIDA]]></text>
+				<reportElement style="Column header" x="266" y="0" width="133" height="15" forecolor="#736343" />
+				<text><![CDATA[HORA SALIDA]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="Column header" x="415" y="0" width="108" height="15" forecolor="#736343" uuid="82284f7a-0265-448e-bb14-b0b41560d099"/>
+				<reportElement style="Column header" x="399" y="0" width="133" height="15" forecolor="#736343" />
 				<text><![CDATA[TARIFA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="532" y="0" width="133" height="15" forecolor="#736343" />
+				<text><![CDATA[FECHA INGRESO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="665" y="0" width="133" height="15" forecolor="#736343" />
+				<text><![CDATA[FECHA SALIDA]]></text>
 			</staticText>
 		</band>
 	</columnHeader>
 	<detail>
 		<band height="15" splitType="Stretch">
 			<frame>
-				<reportElement style="Row" mode="Opaque" x="0" y="0" width="555" height="15" uuid="59fceb6c-b2e3-4c21-be71-c62a6a1d78c7"/>
+				<reportElement style="Row" mode="Opaque" x="0" y="0" width="802" height="15" />
 				<textField isStretchWithOverflow="true">
-					<reportElement style="Detail" x="0" y="0" width="117" height="15" uuid="d0b1d1ef-e224-4b8c-9fea-80322313dab5"/>
+					<reportElement style="Detail" x="0" y="0" width="133" height="15" />
 					<textFieldExpression><![CDATA[$F{vehiculofinal_placa}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true">
-					<reportElement style="Detail" x="117" y="0" width="146" height="15" uuid="3539c07a-5c01-4452-b616-3d7806c615c0"/>
+					<reportElement style="Detail" x="133" y="0" width="133" height="15" />
 					<textFieldExpression><![CDATA[$F{vehiculofinal_horaentrada}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true">
-					<reportElement style="Detail" x="263" y="0" width="151" height="15" uuid="7c6551a3-f02b-4ed6-81cd-200146bacf50"/>
+					<reportElement style="Detail" x="266" y="0" width="133" height="15" />
 					<textFieldExpression><![CDATA[$F{vehiculofinal_horasalida}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true">
-					<reportElement style="Detail" x="414" y="0" width="138" height="15" uuid="39a70b9f-74e2-4b56-9cd2-da1cfa5249e7"/>
+					<reportElement style="Detail" x="399" y="0" width="133" height="15" />
 					<textFieldExpression><![CDATA[$F{vehiculofinal_pago}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="532" y="0" width="133" height="15" />
+					<textFieldExpression><![CDATA[$F{vehiculofinal_fechaentrada}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="665" y="0" width="133" height="15" />
+					<textFieldExpression><![CDATA[$F{vehiculofinal_fechasalida}]]></textFieldExpression>
 				</textField>
 			</frame>
 		</band>
 	</detail>
 	<columnFooter>
-		<band height="45" splitType="Stretch">
+		<band height="6" splitType="Stretch">
 			<line>
-				<reportElement positionType="FixRelativeToBottom" x="0" y="3" width="555" height="1" uuid="d3a9e307-00c9-40eb-8e87-e581ec8b79c1"/>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="3" width="802" height="1" />
 				<graphicElement>
 					<pen lineWidth="0.5" lineColor="#999999"/>
 				</graphicElement>
@@ -138,20 +147,27 @@ FROM
 	<pageFooter>
 		<band height="25" splitType="Stretch">
 			<frame>
-				<reportElement mode="Opaque" x="-21" y="1" width="597" height="24" forecolor="#D0B48E" backcolor="#F2EBDF" uuid="f38b33e4-e145-4e48-9001-9da8807fb07c"/>
+				<reportElement mode="Opaque" x="-21" y="1" width="843" height="24" forecolor="#D0B48E" backcolor="#F2EBDF" />
 				<textField evaluationTime="Report">
-					<reportElement style="Column header" x="533" y="0" width="40" height="20" forecolor="#736343" uuid="4418663b-3cd4-4a2e-b7b5-c4a4fbe77fba"/>
+					<reportElement style="Column header" x="783" y="1" width="40" height="20" forecolor="#736343" />
 					<textElement verticalAlignment="Middle">
 						<font size="10" isBold="false"/>
 					</textElement>
 					<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement style="Column header" x="453" y="0" width="80" height="20" forecolor="#736343" uuid="bb9c58f2-af03-4854-8088-ab674c733a79"/>
+					<reportElement style="Column header" x="703" y="1" width="80" height="20" forecolor="#736343" />
 					<textElement textAlignment="Right" verticalAlignment="Middle">
 						<font size="10" isBold="false"/>
 					</textElement>
 					<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+				</textField>
+				<textField pattern="EEEEE dd MMMMM yyyy">
+					<reportElement style="Column header" x="22" y="1" width="197" height="20" forecolor="#736343" />
+					<textElement verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
 				</textField>
 			</frame>
 		</band>

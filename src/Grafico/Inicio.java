@@ -63,6 +63,7 @@ public class Inicio extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
+        jMenuItem2 = new javax.swing.JMenuItem();
         jMenuItem1 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
 
@@ -120,6 +121,9 @@ public class Inicio extends javax.swing.JFrame {
 
         jMenu1.setText("Herramientas");
 
+        jMenuItem2.setText("Consultas");
+        jMenu1.add(jMenuItem2);
+
         jMenuItem1.setText("Generar Reporte");
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -150,16 +154,17 @@ public class Inicio extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
             String p = placa.getText();
-            int lugar = (int) (Math.random() * 10) + 1;
+            int lugar = (int) (Math.random() * 30) + 1;
             LocalDateTime fecha_actual = LocalDateTime.now();
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd H:m:s");
+            DateTimeFormatter formatter2 = DateTimeFormatter.ofPattern("yyyy-MM-dd");
             String fecha1 = fecha_actual.format(formatter);
-
+            String fecha2 = fecha_actual.format(formatter2);
             if(!lugares.containsValue(p)){
-                if(lugares.size()<5){
+                if(lugares.size()<30){
                     cont++;
                     lugares.put(lugar, p);
-                    Vehiculo v = new Vehiculo(p,fecha1);
+                    Vehiculo v = new Vehiculo(p,fecha1,fecha2);
                     lista1.add(v);
                     RepositorioVehiculo.insertarAuto(v);
                     JOptionPane.showMessageDialog(this, "Auto estacionado en el espacio : "+lugar, "Bien", JOptionPane.INFORMATION_MESSAGE);
@@ -180,7 +185,7 @@ public class Inicio extends javax.swing.JFrame {
         //r.setVisible(true);
         
         try {
-            JasperReport reporte = JasperCompileManager.compileReport("reporteVehiculos.jrxml");
+            JasperReport reporte = JasperCompileManager.compileReport("reporteVehiculoF.jrxml");
             JasperPrint print = JasperFillManager.fillReport(reporte,null,ce );
             JasperViewer.viewReport(print);
         } catch (Exception e) {
@@ -245,6 +250,7 @@ public class Inicio extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JToggleButton jToggleButton1;
     private javax.swing.JTextField placa;
     // End of variables declaration//GEN-END:variables

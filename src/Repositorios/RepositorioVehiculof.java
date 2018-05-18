@@ -25,8 +25,8 @@ public class RepositorioVehiculof {
         try {
             
             String query = "INSERT INTO public.vehiculofinal(\n" +
-"	placa, horaentrada, horasalida, pago)\n" +
-"	VALUES (?, ?, ?, ?);";
+"	placa, horaentrada, horasalida, pago,fechaentrada,fechasalida)\n" +
+"	VALUES (?, ?, ?, ?,?,?);";
             PreparedStatement sentenciaP = database.open().prepareStatement(query);
            // sentenciaP.setInt(1, recreacionista.getId());
             
@@ -34,6 +34,8 @@ public class RepositorioVehiculof {
             sentenciaP.setString(2, vehiculo.getHorae());
             sentenciaP.setString(3, vehiculo.getHoras());
             sentenciaP.setDouble(4, vehiculo.getTarifa());
+            sentenciaP.setString(5, vehiculo.getFechae());
+            sentenciaP.setString(6, vehiculo.getFechas());
 
             
             sentenciaP.executeUpdate();
@@ -56,7 +58,7 @@ public class RepositorioVehiculof {
             ResultSet resultado = sentenciaP.executeQuery();
 //String nombre,String horaI, String horaF, String Usuario,String descripcion,String fechaS
             while (resultado.next()) {
-                vehiculosf.add(Vehiculof.crearV(resultado.getString("placa"), resultado.getString("horaentrada"),resultado.getString("horasalida"),resultado.getDouble("pago")));
+                vehiculosf.add(Vehiculof.crearV(resultado.getString("placa"), resultado.getString("horaentrada"),resultado.getString("horasalida"),resultado.getDouble("pago"), resultado.getString("fechaentrada"), resultado.getString("fechasalida")));
             }
 
             sentenciaP.close();
