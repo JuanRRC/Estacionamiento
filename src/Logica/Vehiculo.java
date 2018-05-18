@@ -11,14 +11,17 @@ package Logica;
  */
 public class Vehiculo {
     
+    
     private String placa;
     private String horae;
 
     public Vehiculo(String placa, String horae) {
+        
         this.placa = placa;
         this.horae = horae;
     }
 
+  
     public String getPlaca() {
         return placa;
     }
@@ -35,8 +38,10 @@ public class Vehiculo {
         this.horae = horae;
     }
     
-    
-    
+    public static Vehiculo crearV(String placa,String horae) {
+        return new Vehiculo(placa,horae);
+        
+    }
     
     
 }

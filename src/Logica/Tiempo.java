@@ -11,6 +11,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -76,13 +77,19 @@ public class Tiempo {
         Date fechaFinal=dateFormat.parse(hs);
         
         long diff = fechaFinal.getTime() - fechaInicial.getTime();
-        long segundos = diff / 1000;
+        
+        if(diff>0){
+            long segundos = diff / 1000;
         long minutos = segundos / 60;
         System.out.println(minutos);
         System.out.println(hs);
         System.out.println(he);
-        
         return minutos;
+        }else{
+            return 0;
+        }
+        
+        
         
     }
        

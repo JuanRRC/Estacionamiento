@@ -5,7 +5,7 @@
  */
 package estacionamiento;
 
-import Grafico.Ventana;
+import Grafico.*;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
@@ -26,24 +26,15 @@ public class Principal {
                     
                     System.out.println(fecha1);
                     
+                    Login l = new Login();
+                    l.setVisible(true);
                     
+                   //Ventana v = new Ventana();
+                   // v.setVisible(true);
                     
-                    
-                    
-                    
-                    Ventana v=new Ventana();
-                    v.setVisible(true);
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-        
+                    //Inicio i = new Inicio();
+                    //i.setVisible(true);
+ 
     }
     
 }

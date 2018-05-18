@@ -172,242 +172,209 @@ public class Estacionamiento extends javax.swing.JFrame {
         U28 = new javax.swing.JButton();
         U29 = new javax.swing.JButton();
         U30 = new javax.swing.JButton();
-        cargar = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setMaximumSize(new java.awt.Dimension(767, 422));
+        setMinimumSize(new java.awt.Dimension(767, 422));
+        setPreferredSize(new java.awt.Dimension(767, 422));
+        getContentPane().setLayout(null);
 
         jLabel1.setText("PISO 1");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(10, 250, 90, 30);
 
+        U1.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         U1.setText("1");
         U1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 U1ActionPerformed(evt);
             }
         });
+        getContentPane().add(U1);
+        U1.setBounds(30, 320, 40, 21);
 
+        U2.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         U2.setText("2");
+        getContentPane().add(U2);
+        U2.setBounds(90, 320, 50, 21);
 
+        U3.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         U3.setText("3");
+        getContentPane().add(U3);
+        U3.setBounds(150, 320, 50, 21);
 
+        U4.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         U4.setText("4");
+        getContentPane().add(U4);
+        U4.setBounds(210, 320, 50, 21);
 
+        U5.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         U5.setText("5");
+        getContentPane().add(U5);
+        U5.setBounds(270, 320, 50, 21);
 
+        U6.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         U6.setText("6");
+        getContentPane().add(U6);
+        U6.setBounds(330, 320, 50, 21);
 
+        U7.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         U7.setText("7");
+        getContentPane().add(U7);
+        U7.setBounds(390, 320, 40, 21);
 
+        U8.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         U8.setText("8");
         U8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 U8ActionPerformed(evt);
             }
         });
+        getContentPane().add(U8);
+        U8.setBounds(450, 320, 40, 21);
 
+        U9.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         U9.setText("9");
+        getContentPane().add(U9);
+        U9.setBounds(510, 320, 50, 21);
 
+        U10.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         U10.setText("10");
+        getContentPane().add(U10);
+        U10.setBounds(570, 320, 50, 21);
 
         jLabel4.setText("PISO 2");
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(10, 130, 80, 30);
 
+        U11.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         U11.setText("11");
+        getContentPane().add(U11);
+        U11.setBounds(23, 190, 50, 21);
 
+        U12.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         U12.setText("12");
+        getContentPane().add(U12);
+        U12.setBounds(90, 190, 50, 21);
 
+        U13.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         U13.setText("13");
+        getContentPane().add(U13);
+        U13.setBounds(150, 190, 50, 21);
 
+        U14.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         U14.setText("14");
+        getContentPane().add(U14);
+        U14.setBounds(210, 190, 48, 21);
 
+        U15.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         U15.setText("15");
+        getContentPane().add(U15);
+        U15.setBounds(270, 190, 50, 21);
 
+        U16.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         U16.setText("16");
+        getContentPane().add(U16);
+        U16.setBounds(330, 190, 50, 21);
 
+        U17.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         U17.setText("17");
+        getContentPane().add(U17);
+        U17.setBounds(390, 190, 50, 21);
 
+        U18.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         U18.setText("18");
+        getContentPane().add(U18);
+        U18.setBounds(450, 190, 50, 21);
 
+        U19.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         U19.setText("19");
+        getContentPane().add(U19);
+        U19.setBounds(510, 190, 50, 21);
 
+        U20.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         U20.setText("20");
+        getContentPane().add(U20);
+        U20.setBounds(570, 190, 50, 21);
 
         jLabel2.setText("PISO 3");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(10, 20, 70, 30);
 
+        U21.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         U21.setText("21");
+        getContentPane().add(U21);
+        U21.setBounds(30, 70, 50, 21);
 
+        U22.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         U22.setText("22");
+        getContentPane().add(U22);
+        U22.setBounds(90, 70, 50, 21);
 
+        U23.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         U23.setText("23");
+        getContentPane().add(U23);
+        U23.setBounds(150, 70, 50, 21);
 
+        U24.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         U24.setText("24");
+        getContentPane().add(U24);
+        U24.setBounds(210, 70, 50, 21);
 
+        U25.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         U25.setText("25");
+        getContentPane().add(U25);
+        U25.setBounds(270, 70, 50, 21);
 
+        U26.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         U26.setText("26");
+        getContentPane().add(U26);
+        U26.setBounds(330, 70, 50, 21);
 
+        U27.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         U27.setText("27");
         U27.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 U27ActionPerformed(evt);
             }
         });
+        getContentPane().add(U27);
+        U27.setBounds(390, 70, 50, 21);
 
+        U28.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         U28.setText("28");
         U28.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 U28ActionPerformed(evt);
             }
         });
+        getContentPane().add(U28);
+        U28.setBounds(450, 70, 50, 20);
 
+        U29.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         U29.setText("29");
         U29.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 U29ActionPerformed(evt);
             }
         });
+        getContentPane().add(U29);
+        U29.setBounds(510, 70, 50, 21);
 
+        U30.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         U30.setText("30");
         U30.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 U30ActionPerformed(evt);
             }
         });
+        getContentPane().add(U30);
+        U30.setBounds(570, 70, 50, 21);
 
-        cargar.setText("Refrescar");
-        cargar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cargarActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(24, 24, 24)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel1)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(U21, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(U11, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(U1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(U2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(U12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addComponent(U22))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(14, 14, 14)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(U3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(U13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(U4, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(U5, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(U6, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(U7)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(U8)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(U9)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(U10))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(U14, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(U15)
-                                        .addGap(10, 10, 10)
-                                        .addComponent(U16)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(U17)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(U18)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(U19)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(U20))))
-                            .addGroup(layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(U23)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(U24)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(U25)
-                                .addGap(18, 18, 18)
-                                .addComponent(U26)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(U27)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(U28)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(U29)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(U30)))))
-                .addContainerGap(166, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(cargar)
-                .addGap(33, 33, 33))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(20, 20, 20)
-                .addComponent(jLabel1)
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(U1)
-                    .addComponent(U2)
-                    .addComponent(U3)
-                    .addComponent(U4)
-                    .addComponent(U5)
-                    .addComponent(U6)
-                    .addComponent(U7)
-                    .addComponent(U8)
-                    .addComponent(U9)
-                    .addComponent(U10))
-                .addGap(31, 31, 31)
-                .addComponent(jLabel4)
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(U11)
-                    .addComponent(U12)
-                    .addComponent(U13)
-                    .addComponent(U14)
-                    .addComponent(U15)
-                    .addComponent(U16)
-                    .addComponent(U17)
-                    .addComponent(U18)
-                    .addComponent(U19)
-                    .addComponent(U20))
-                .addGap(27, 27, 27)
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(U21)
-                    .addComponent(U22)
-                    .addComponent(U23)
-                    .addComponent(U24)
-                    .addComponent(U25)
-                    .addComponent(U26)
-                    .addComponent(U27)
-                    .addComponent(U28)
-                    .addComponent(U29)
-                    .addComponent(U30))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 52, Short.MAX_VALUE)
-                .addComponent(cargar)
-                .addGap(38, 38, 38))
-        );
+        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\Clint\\Documents\\NetBeansProjects\\estacionamiento\\src\\imagenes\\parqueadero.jpg")); // NOI18N
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(0, 0, 770, 420);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -431,12 +398,6 @@ public class Estacionamiento extends javax.swing.JFrame {
     private void U30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_U30ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_U30ActionPerformed
-
-    private void cargarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cargarActionPerformed
-        // TODO add your handling code here:
-        
-        
-    }//GEN-LAST:event_cargarActionPerformed
 
     private void U1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_U1ActionPerformed
         // TODO add your handling code here:
@@ -508,9 +469,9 @@ public class Estacionamiento extends javax.swing.JFrame {
     private javax.swing.JButton U7;
     private javax.swing.JButton U8;
     private javax.swing.JButton U9;
-    private javax.swing.JButton cargar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     // End of variables declaration//GEN-END:variables
 }

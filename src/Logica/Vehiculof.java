@@ -11,16 +11,33 @@ package Logica;
  */
 public class Vehiculof {
     
+        
         private String placa;
         private String horae;
         private String horas;
+        private double tarifa;
 
-    public Vehiculof(String placa, String horae, String horas) {
+    public Vehiculof(String placa, String horae, String horas,double tarifa) {
+        
         this.placa = placa;
         this.horae = horae;
         this.horas = horas;
+        this.tarifa=tarifa;
     }
 
+  
+    
+
+    public double getTarifa() {
+        return tarifa;
+    }
+
+    public void setTarifa(double tarifa) {
+        this.tarifa = tarifa;
+    }
+
+    
+    
     public String getPlaca() {
         return placa;
     }
@@ -46,7 +63,10 @@ public class Vehiculof {
     }
         
         
-    
+    public static Vehiculof crearV(String placa, String horae, String horas,double tarifa) {
+        return new Vehiculof(placa,horae,horas,tarifa);
+        
+    }
         
         
 }

@@ -10,6 +10,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import Logica.*;
+import Repositorios.RepositorioVehiculof;
 import java.text.ParseException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -54,6 +55,11 @@ public class Salida extends javax.swing.JFrame {
             ubicacion.addItem(lugar2.get(key));
             
         }
+    }
+    
+    public void recibo(String pla,String he,String hs,double p){
+        
+        
     }
     /**
      * This method is called from within the constructor to initialize the form.
@@ -193,11 +199,11 @@ public class Salida extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(38, 38, 38)
+                .addGap(61, 61, 61)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
                     .addComponent(ubicacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(41, 41, 41)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(fecha))
@@ -254,13 +260,14 @@ public class Salida extends javax.swing.JFrame {
         //String d = Integer.toString(dia);
         String u = (String) ubicacion.getSelectedItem();
         String horae = null;
-        
+        int idprov=0;
         Iterator<Vehiculo> it = lista1.iterator();
         Vehiculo num;
         while (it.hasNext()){
             num = it.next();
             if(num.getPlaca()==u){
                 horae=num.getHorae();
+               
             }
         }
         
@@ -270,18 +277,18 @@ public class Salida extends javax.swing.JFrame {
         String horas=a+"-"+me+"-"+d+" "+h+":"+m+":"+s;
         System.out.println("Hora desalida :"+horas);
         System.out.println("Hora de entrada :"+horae);
-        Vehiculof vf =new Vehiculof(u,horae,horas);
-        lista3.add(vf);
+        
         
         
         Tiempo t = new Tiempo(horae,horas);
         try {
             t.calfe(horae, horas);
             min=t.calfe(horae, horas);
+            
         } catch (ParseException ex) {
             Logger.getLogger(Salida.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
+        if(min!=0){
         try{      
         String u1 = (String) ubicacion.getSelectedItem();
         
@@ -298,10 +305,17 @@ public class Salida extends javax.swing.JFrame {
             System.out.println("ERROR");
         }
         
-        System.out.println(min);
-        long Precio=min*55;
+        
+        
+        double Precio=min*55;
+        Vehiculof vf =new Vehiculof(u,horae,horas,Precio);
+        lista3.add(vf);
+        RepositorioVehiculof.insertarAutofinal(vf);
         JOptionPane.showMessageDialog(null, "Placa : "+u+"\n"+"Hora de Llegada :"+horae+"\n"+"Hora Salida :"+horas+"\n"+"Precio : "+Precio);
         System.out.println(Precio);
+        }else{
+            JOptionPane.showMessageDialog(null, "Error el hora de salida no es valida");
+        }
         
     }//GEN-LAST:event_calcularActionPerformed
 
